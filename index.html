@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello Web - Processing.js Test</title>
+    <title>Strobe Color Simulation</title>
     <script src="processing-1.3.6.min.js"></script>
-    
+    <script src="jquery-1.12.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>Processing.js Test</h1>
-    <p>This is my first Processing.js web-based sketch:</p>
-    <canvas data-processing-sources="simulation.pde"></canvas>
+    <script>
+    // create an object to hold variables controlled by the UI
+    var uivars = {
+        theWord: "Processing.js",  // set initial values
+        selectedLetter: 0
+    };
+    </script>
+    <h1> Strobe Color Simulation</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-8">
+                <canvas data-processing-sources="simulation.pde"></canvas>
+            </div>
+            <div class="col-xs-4">
+                <form>
+                    <label>Red:</label><input type="range" id="red" value="50" min="0" max="100">
+                    <label>Green:</label><input type="range" id="green" value="50" min="0" max="100">
+                    <label>Blue:</label><input type="range" id="blue" value="50" min="0" max="100">
+                </form>
+            </div>
 
+
+        </div>
+    </div>
 </body>
 </html>
 
