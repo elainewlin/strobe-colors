@@ -4,7 +4,7 @@ $(function() {
     
   $("#red").slider({                  
       value: uivars.red,                          
-      min: 0, max: 100, step: 1,     
+      min: 1, max: 7, step: 1,     
       slide: function(event, slider) {    
           uivars.red = slider.value; 
       }
@@ -12,7 +12,7 @@ $(function() {
 
   $("#green").slider({                   
       value: uivars.green,                          
-      min: 0, max: 100, step: 1,     
+      min: 1, max: 7, step: 1,     
       slide: function(event, slider) {    
           uivars.green = slider.value; 
       }
@@ -20,7 +20,7 @@ $(function() {
 
   $("#blue").slider({                   
       value: uivars.blue,                          
-      min: 0, max: 100, step: 1,     
+      min: 1, max: 7, step: 1, 
       slide: function(event, slider) {    
           uivars.green = slider.value; 
       
