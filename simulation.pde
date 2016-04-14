@@ -86,7 +86,7 @@ void setup() {
 }
 
 void equals(pos1, pos2) {
-    return (abs(pos1-pos2) < 10);
+    return (abs(pos1-pos2) < dropSize/4);
 }
 
 float[] dropSpeeds = new float[]{abs(uivars.red), abs(uivars.green), abs(uivars.blue)};
