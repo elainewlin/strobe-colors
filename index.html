@@ -17,21 +17,21 @@
         green: 0,
         blue: 0
     };
-
     </script>
     <script src="slider.js"></script>
-    <h1> Strobe Color Simulation</h1>
+    
 
     <div class="container">
+        <div class="page-header"><h1> Strobe Color Simulation</h1></div>
         <div class="row">
             <div class="col-xs-8">
                 <canvas data-processing-sources="simulation.pde"></canvas>
             </div>
             <div class="col-xs-4">
             <form>
-                <label>Red</label><div id="red" class="uislider"></div>
-                <label>Green</label><div id="green" class="uislider"></div>
-                <label>Blue</label><div id="blue" class="uislider"></div>
+                <label>Red</label><div id="red" class="uislider" style="background:#ff9999;"></div>
+                <label>Green</label><div id="green" class="uislider" style="background:#99ff99;"></div>
+                <label>Blue</label><div id="blue" class="uislider" style="background:#9999ff;"></div>
             </form>
             </div>
 
@@ -40,4 +40,3 @@
     </div>
 </body>
 </html>
-

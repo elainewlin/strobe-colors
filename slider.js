@@ -17,7 +17,7 @@ $(function() {
           uivars.green = slider.value; 
       }
   });
-
+$('#unicornSlider').slider();
   $("#blue").slider({                   
       value: uivars.blue,                          
       min: -1, max: 1, step: .25,     

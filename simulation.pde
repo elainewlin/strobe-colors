@@ -10,8 +10,8 @@ color yellow = color(#FFFF00);
 color magenta = color(#FF00FF);
 color cyan = color(#00FFFF);
 
-int length = 500;
-int dropSize = 20;
+int length = 600;
+int dropSize = 30;
 int addPos = length/4;
 int subPos = 3*length/4;
 
