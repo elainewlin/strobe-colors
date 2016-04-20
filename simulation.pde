@@ -123,7 +123,7 @@ void draw(){
         magentaDrops[i].subFall(uivars.green);
         yellowDrops[i].subFall(uivars.red);
     }
-
+    
     for(int r = 0; r < numDrops; r++) {
         for(int g = 0; g < numDrops; g++) {
             for(int b = 0; b < numDrops; b++) {
