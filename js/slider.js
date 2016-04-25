@@ -2,6 +2,9 @@
 
 $(function() {
     
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+
   $("#red").slider({                  
       value: uivars.red,                          
       min: -1, max: 1, step: .25,     

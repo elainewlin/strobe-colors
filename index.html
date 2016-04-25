@@ -7,9 +7,11 @@
     <script src="js/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/strobe-colors.css">
     <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+<!--Remaining section-->
     <script>
     // create an object to hold variables controlled by the UI
     var uivars = {
@@ -18,33 +20,34 @@
         blue: 0
     };
     </script>
-    <script src="slider.js"></script>
-    
+    <script src="js/slider.js"></script>
+    <div id="header"></div>
+
 
     <div class="container">
-        <div class="page-header"><h1> Strobe Color Simulation</h1></div>
         <div class="row">
             <div class="col-xs-8">
                 <canvas data-processing-sources="simulation.pde"></canvas>
             </div>
             <div class="col-xs-4">
             <form>
-                <label>Red</label><div id="red" class="uislider" style="background:#ff9999;"></div>
-                <label>Green</label><div id="green" class="uislider" style="background:#99ff99;"></div>
-                <label>Blue</label><div id="blue" class="uislider" style="background:#9999ff;"></div>
+                <div class="slider">
+                    <label>Red</label><div id="red" class="uislider" style="background:#ff9999;"></div>
+                </div>
+                <div class="slider">
+                    <label>Green</label><div id="green" class="uislider" style="background:#99ff99;"></div>
+                </div>
+                <div class="slider">
+                    <label>Blue</label><div id="blue" class="uislider" style="background:#9999ff;"></div>
+                </div>
             </form>
-      
-
-
+            
             </div>
 
 
         </div>
     </div>
-    <footer class="footer" style="background: #e6e6e6">
-        <div class="container">
-            Final project for 6.163 Strobe Photography. Questions? Contact us at strobe-colors@mit.edu.
-        </div>
-    </footer>
+    <div id="footer"></div>
+
 </body>
 </html>

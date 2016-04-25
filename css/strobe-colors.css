@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif, Helvetica;
+}
+.slider { padding: 20px; }
+.navbar-default {
+    background: #1B4965;
+}
+.navbar-default > .navbar-header > a {
+    color: #ffffff;
+}
+.navbar-default > .navbar-header > a:hover {
+    color: #CAE9FF;
+}
+.navbar .nav > li > a{
+    color: #ffffff;
+}
+
+.navbar .nav > li > a:hover{
+    color: #CAE9FF;
+}
+footer {
+    text-align: center;
+    bottom:0px;
+    background: #5FA8D3;
+    position:fixed;
+    color: #ffffff;
+}

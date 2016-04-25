@@ -10,7 +10,7 @@ color yellow = color(#FFFF00);
 color magenta = color(#FF00FF);
 color cyan = color(#00FFFF);
 
-int length = 600;
+int length = 565;
 int dropSize = 30;
 int addPos = length/4;
 int subPos = 3*length/4;
@@ -71,7 +71,7 @@ Drop[] cyanDrops = new Drop[numDrops];
 Drop[] magentaDrops = new Drop[numDrops];
 Drop[] yellowDrops = new Drop[numDrops];
 void setup() {
-    size(600,600);
+    size(length,length);
     smooth();
     //Loop through array to create each object
     for (int i = 0; i < numDrops; i++) {
@@ -123,7 +123,7 @@ void draw(){
         magentaDrops[i].subFall(uivars.green);
         yellowDrops[i].subFall(uivars.red);
     }
-    
+
     for(int r = 0; r < numDrops; r++) {
         for(int g = 0; g < numDrops; g++) {
             for(int b = 0; b < numDrops; b++) {
