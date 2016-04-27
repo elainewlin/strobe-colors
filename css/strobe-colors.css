@@ -18,10 +18,16 @@ body {
 .navbar .nav > li > a:hover{
     color: #CAE9FF;
 }
+
+
+h3 {
+    text-align: center;
+}
 footer {
     text-align: center;
     bottom:0px;
     background: #5FA8D3;
     position:fixed;
     color: #ffffff;
+    width: 100%;
 }

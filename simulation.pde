@@ -86,7 +86,7 @@ void setup() {
 }
 
 void equals(pos1, pos2) {
-    return (abs(pos1-pos2) < dropSize/4);
+    return (abs(pos1-pos2) < 2*dropSize/5);
 }
 
 float[] dropSpeeds = new float[]{abs(uivars.red), abs(uivars.green), abs(uivars.blue)};
@@ -119,9 +119,9 @@ void draw(){
         greenDrops[i].addFall(uivars.green);
         blueDrops[i].addFall(uivars.blue);
 
-        cyanDrops[i].subFall(uivars.blue);
+        cyanDrops[i].subFall(uivars.red);
         magentaDrops[i].subFall(uivars.green);
-        yellowDrops[i].subFall(uivars.red);
+        yellowDrops[i].subFall(uivars.blue);
     }
 
     for(int r = 0; r < numDrops; r++) {
