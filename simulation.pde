@@ -10,12 +10,12 @@ color yellow = color(#FFFF00);
 color magenta = color(#FF00FF);
 color cyan = color(#00FFFF);
 
-int length = 565;
+int length = 500;
 int dropSize = 30;
 int addPos = length/4;
-int subPos = 3*length/4;
+int subPos = .7*length;
 
-    
+
 
 HashMap<Integer,Integer> addColors = new HashMap<Integer,Integer>();
 addColors.put(1, cyan);
@@ -63,7 +63,7 @@ class Drop {
 }
 
 
-int numDrops = 5;
+int numDrops = 4;
 Drop[] redDrops = new Drop[numDrops]; // Declare and create the array
 Drop[] greenDrops = new Drop[numDrops]; 
 Drop[] blueDrops = new Drop[numDrops]; 
@@ -86,7 +86,7 @@ void setup() {
 }
 
 void equals(pos1, pos2) {
-    return (abs(pos1-pos2) < 2*dropSize/5);
+    return (abs(pos1-pos2) < .3*dropSize);
 }
 
 float[] dropSpeeds = new float[]{abs(uivars.red), abs(uivars.green), abs(uivars.blue)};
@@ -156,6 +156,5 @@ void draw(){
             }
         }
     }
-
 }
 

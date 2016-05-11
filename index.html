@@ -21,12 +21,20 @@
     };
     </script>
     <script src="js/slider.js"></script>
-    <div id="header"></div>
 
-
+ 
     <div class="container">
-        <div class="row">
-            <div class="col-xs-8">
+        <h1>Assessing color mixing of droplets with stroboscopy</h1>
+
+        <div class="row simulation">
+            <div class="col-xs-2">
+                <div class="all-lights">
+                    <img class="red lights" src="red.png"></img>
+                    <img class="green lights" src="green.png"></img>
+                    <img class="blue lights" src="blue.png"></img>
+                </div>
+            </div>
+            <div class="col-xs-6">
                 <canvas data-processing-sources="simulation.pde"></canvas>
             </div>
             <div class="col-xs-4">
@@ -41,13 +49,45 @@
                     <label>Blue</label><div id="blue" class="uislider" style="background:#9999ff;"></div>
                 </div>
             </form>
-            
+
             </div>
 
 
         </div>
-    </div>
-    <div id="footer"></div>
+    <div class="row">
+        <div class="col-xs-12">
+        <br>
+        <!-- <img class="photo"src="red.png"></img> -->
 
+        <b>Stroboscopy</b> is a method of examining a vibrating or fast moving object. In this project, we flash red, green, and blue lights at a piddler, an oscillating pump. The pump produces a small pulse of liquid at a rate of 60 pulses per second.
+
+        The rates of the lights affect the motion of the droplets. For any color, 
+        <ul>
+            <li>slower than piddler &rarr; droplet moving down</li>
+            <li>faster than piddler &rarr; droplet moving up</li>
+            <li>same as piddler &rarr; droplet stays still</li>
+        </ul>
+
+        There are two types of <b>color mixing</b>: additive and subtractive. Each process works by combining differing amounts of three "primary colors" to create the desired hue. 
+        </div>
+        <div class="col-xs-6">
+            <h3>Additive color mixing with water droplets</h3>
+            <img class="color-mixing" src="additive-color.png">
+            <div class="caption">Image: Wikimedia Commons</div>
+        </div>
+        <div class="col-xs-6">
+            <h3>Subtractive color mixing with shadows</h3>
+            <img class="color-mixing" src="subtractive-color.png">
+            <div class="caption">Image: Wikimedia Commons
+        </div></div>
+
+        </div>
+        </div>
+    </div>
+    <footer>
+    <div class="container">
+        Final project for 6.163 Strobe Photography. Questions? Contact us at strobe-colors@mit.edu.
+    </div>
+</footer>
 </body>
 </html>

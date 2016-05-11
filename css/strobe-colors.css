@@ -15,23 +15,57 @@ body {
     color: #ffffff;
 }
 
+
 .navbar .nav > li > a:hover{
     color: #CAE9FF;
 }
 
-img {
+.caption {
+    text-align: center;
+    font-size: 8pt;
+}
+.demolabel {
+    text-align: right;
+}
+
+.simulation {
+    border: 2px solid black;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.color-mixing {
     width:50%;
     display: block;
     margin: auto;
 }
+
+.lights {
+    width: 100%;
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+    margin: 25px;
+}
+
+.photo {
+    margin: auto;
+    display: block;
+}
+
 h3 {
     text-align: center;
 }
 footer {
     text-align: center;
-    bottom:0px;
     background: #5FA8D3;
-    position:fixed;
     color: #ffffff;
     width: 100%;
 }
